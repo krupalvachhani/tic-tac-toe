@@ -26,6 +26,7 @@ boxes.forEach((box)=>{
                 printwinner("X");
                 return;
             }
+            box.disabled=true;
             radioButtons.forEach((btn)=>{
                 if(btn.checked && btn.value==="two"){
                     turn0=false;
@@ -37,6 +38,7 @@ boxes.forEach((box)=>{
                         disablebtn();
                         printwinner("O");
                     }
+                    boxes[i].disabled=true;
                     let j=0;
                     boxes.forEach((box)=>{
                         if(box.innerText==="X"||box.innerText==="O"){
@@ -57,9 +59,9 @@ boxes.forEach((box)=>{
                 disablebtn();
                 printwinner("O");
             }
+            box.disabled=true;
             turn0=true;
         }
-        box.disabled=true;
     })
 })
 const disablebtn=()=>{

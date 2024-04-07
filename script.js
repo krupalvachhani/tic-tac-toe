@@ -37,19 +37,19 @@ boxes.forEach((box)=>{
                     if(checkwinner()){
                         disablebtn();
                         printwinner("O");
-                    }
-                    boxes[i].disabled=true;
-                    let j=0;
-                    boxes.forEach((box)=>{
-                        if(box.innerText==="X"||box.innerText==="O"){
-                            j++;
+                    }else{
+                        boxes[i].disabled=true;
+                        let j=0;
+                        boxes.forEach((box)=>{
+                            if(box.innerText==="X"||box.innerText==="O"){
+                                j++;
+                            }
+                        })
+                        if(j==8){
+                            printwinner("not found");
+                            disablebtn();
+                            return;
                         }
-                    })
-                    console.log(j);
-                    if(j==8){
-                        printwinner("not found");
-                        disablebtn();
-                        return;
                     }
                 }
             })

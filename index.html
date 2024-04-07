@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-8 col-md-4 mx-auto">
+            <h1 class="text-center text-muted">Tic-Tae-Toe</h1>
+            <div class="row">
+                <button class="box col-4"></button>
+                <button class="box col-4"></button>
+                <button class="box col-4"></button>
+                <button class="box col-4"></button>
+                <button class="box col-4"></button>
+                <button class="box col-4"></button>
+                <button class="box col-4"></button>
+                <button class="box col-4"></button>
+                <button class="box col-4"></button>
+                <button class="reset col-5 mx-auto my-2 p-1">Reset</button>
+            </div>
+            <div class="msg-container">
+                <p class="msg text-center"></p>
+            </div>
+            <div class="selection">
+                <div class="form-check form-check-inline single">
+                    <input class="form-check-input" type="radio" name="Player" id="inlineRadio1" value="one">
+                    <label class="form-check-label" for="inlineRadio1">Single Player</label>
+                </div>
+                <div class="form-check form-check-inline multi">
+                    <input class="form-check-input" type="radio" name="Player" id="inlineRadio2" value="two" checked>
+                    <label class="form-check-label" for="inlineRadio2">Two Player</label>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

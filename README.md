@@ -1,2 +1,2 @@
-#checkout here
-#https://mindachokadi.netlify.app/
+# checkout here
+# https://mindachokadi.netlify.app/
